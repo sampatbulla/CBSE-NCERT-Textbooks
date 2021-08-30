@@ -35,15 +35,7 @@ nav {
   font: white;
   background-color: black;
 }
-nav .logo {
-  float: left;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  color: white;
-}
+
 nav .links {
   float: right;
   padding: 0;
