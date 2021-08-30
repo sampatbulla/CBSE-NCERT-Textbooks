@@ -6,6 +6,8 @@
   outline: none;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+   text-align: justify;
+  text-justify: inter-word;
 }
 body{
   background: ;
@@ -148,18 +150,26 @@ nav .icon-burger .line {
 }
 .lefthalf{
   float: left;
-  width: 40%;}
+  width: 40%;
+}
+.piccbse{
+  width: 50%;
+  height: auto;
+}
 .righthalf{
   float: right;
-  width: 60%;
+  width: 55%;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 5%;
 }
 
 
 .smalltextarea{
   padding: 30px;
   font-size: 20px;
-  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+
 }
 .custom-shape-divider-bottom-1621601408 {
     position: relative;
@@ -187,7 +197,6 @@ nav .icon-burger .line {
   height: 85vh;
   width: 100vw;
   display: flex;
-  align-content: center;
   background-color:lightblue;
   padding-top:15vh; 
   font-weight: ;
@@ -205,12 +214,16 @@ nav .icon-burger .line {
   width: 50%;
   margin-left: 3vw;
   padding-right: 5vw; 
+   text-align: justify;
+  text-justify: inter-word;
 }
 .list2{
   float: right;
   width:50%;
   margin-left: 3vw;
   padding-right: 5vw; 
+   text-align: justify;
+  text-justify: inter-word;
 }
 .vline{
   border-left: 1px solid black;
@@ -243,9 +256,13 @@ nav .icon-burger .line {
 .warnings{
   padding-top: 5vh;
   width: 100vw;
-  align-content: center;
-  text-align: center;
   font-size: 1.4em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.warnings h1{
+   align-content: center;
+  text-align: center;
 }
 .warning{
   display: block;  
@@ -258,5 +275,7 @@ nav .icon-burger .line {
 .warningtext ul{
   text-align: left;
   list-style-image: url('bullet.gif');
+  text-align: justify;
+  text-justify: inter-word;
 }
 
