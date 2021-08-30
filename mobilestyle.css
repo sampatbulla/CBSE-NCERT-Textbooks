@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: ;
+}
+.mainbody{
+  height: 100vh;
+  width: 100vw;
+  background-color:black;
+}
+.mainbody video{
+  height: 100vh;
+  width: 100vw;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+}
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 5%;
+  height: 100px;
+  font: white;
+  background-color: black;
+}
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  /*text-decoration-line: underline;
+  text-decoration-style: solid;*/
+}
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 900px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.01);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+        background-color: black;
+
+  }
+  nav .links a {
+    font-size: 20px;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+}
+
+
+
+
+/* body */
+.smain{
+  height: 70vh;
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  background-color:white;
+}
+
+
+
+.smalltextarea{
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.custom-shape-divider-bottom-1621601408 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: ;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1621601408 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1621601408 .shape-fill {
+    fill: #add8e6;
+}
+/* lists*/
+.list{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  background-color:lightblue;
+  padding-top:5vh; 
+  font-weight: ;
+  font-size: 1.5em;
+}
+.list ul{
+  list-style-image: url('bullet.png');
+
+}
+.list li{
+  padding: 15px;
+}
+.list1{
+  float: left;
+  width: 50%;
+  margin-left: 3vw;
+  padding-right: 5vw; 
+}
+.list2{
+  float: right;
+  width:50%;
+  margin-left: 3vw;
+  padding-right: 5vw; 
+}
+.vline{
+  border-left: 1px solid black;
+  height: 90vh;
+}
+
+
+.custom-shape-divider-top-1621603030 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1621603030 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1621603030 .shape-fill {
+    fill: #ADD8E6;
+}
+
+/*warning*/
+.warnings{
+  padding-top: 5vh;
+  width: 100vw;
+  align-content: center;
+  text-align: center;
+  font-size: 1.4em;
+}
+.warning{
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto; 
+}
+.warningtext{
+  margin: 0 15vw;
+}
+.warningtext ul{
+  text-align: left;
+  list-style-image: url('bullet.gif');
+}
+

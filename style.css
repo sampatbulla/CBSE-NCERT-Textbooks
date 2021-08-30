@@ -1,4 +1,4 @@
-
+...
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 *{
   margin: 0;
@@ -109,6 +109,8 @@ nav .icon-burger .line {
     overflow: hidden;
     box-sizing: border-box;
     transition: all .5s ease-in-out;
+        background-color: black;
+
   }
   nav .links a {
     font-size: 20px;
@@ -135,7 +137,6 @@ nav .icon-burger .line {
 
 
 /* body */
-
 .smain{
   height: 70vh;
   display: flex;
@@ -152,6 +153,8 @@ nav .icon-burger .line {
   float: right;
   width: 60%;
 }
+
+
 .smalltextarea{
   padding: 30px;
   font-size: 20px;
@@ -256,3 +259,4 @@ nav .icon-burger .line {
   text-align: left;
   list-style-image: url('bullet.gif');
 }
+
