@@ -2,6 +2,8 @@
 <html>
 <head>
 	<!-- CSS only -->
+	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -29,18 +31,18 @@
 	</nav>
 	<br>
 	<br><br><br>
-	<div class="mainbody">
+	<div class="mainbody" data-aos="slide-down">
 		<video autoplay muted loop>
 			  <source src="spiner.mp4" type="video/mp4">
 			  Your browser does not support the video.
 		</video>
 	</div>
 	<svg height="100%" width="100vw" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#00000088"></stop><stop offset="95%" stop-color="#9900ef88"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 130.71428571428572,156.64285714285714 261.42857142857144,180.28571428571428 383,171 C 504.57142857142856,161.71428571428572 616.9999999999999,119.5 742,109 C 867.0000000000001,98.5 1004.5714285714287,119.71428571428572 1123,129 C 1241.4285714285713,138.28571428571428 1340.7142857142858,135.64285714285714 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#000000ff"></stop><stop offset="95%" stop-color="#9900efff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 94.25,240.92857142857144 188.5,215.85714285714286 317,231 C 445.5,246.14285714285714 608.25,301.5 747,316 C 885.75,330.5 1000.5,304.14285714285717 1112,289 C 1223.5,273.85714285714283 1331.75,269.92857142857144 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path></svg>
-	<div class="smain">
-		<div class="lefthalf">
+	<div class="smain" >
+		<div class="lefthalf" data-aos="slide-right">
 			<img class="piccbse" src="CBSE-Color.svg">
 		</div>
-		<div class="righthalf">
+		<div class="righthalf" data-aos="slide-left">
 			<div class="smalltextarea">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				A textbook is a book used for the study of a subject. People use a textbook to learn facts and methods about a certain subject. Textbooks sometimes have questions to test the knowledge and understanding of the learner.
 				A textbook is usually lent to students by a school to accompany a course the school is teaching. Sometimes, especially at university, students have to buy the textbooks they need themselves or borrow them from a library.
@@ -83,7 +85,8 @@
 		<br>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		I like to think of textbooks as tools they are only as good as the person using them. A hammer in the hands of a competent carpenter can be used to create a great cathedral or an exquisite piece of furniture. In the hands of someone else, the result may be a rundown shack or a rickety bench. How you decide to use textbooks will depend on many factors.</p>
-		<p>I would like to add a personal note of caution here: do not make the mistake of basing your entire classroom curriculum on a single textbook. The textbook needs to be used judiciously. A carpenter, for example, doesn't use only a hammer to build a magnificent oak chest. She may use a plane, chisel, saw, sander, or any number of tools to create the masterpiece she wishes to build. A great classroom program, just like a great piece of furniture, needs many tools in its construction.</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		I would like to add a personal note of caution here: do not make the mistake of basing your entire classroom curriculum on a single textbook. The textbook needs to be used judiciously. A carpenter, for example, doesn't use only a hammer to build a magnificent oak chest. She may use a plane, chisel, saw, sander, or any number of tools to create the masterpiece she wishes to build. A great classroom program, just like a great piece of furniture, needs many tools in its construction.</p>
 		<br>
 		<p>When thinking about how you want to use textbooks, consider the following:
 			<ul>
@@ -96,5 +99,18 @@
 		</p>
 		</div>
 	</div>
+	<!--AOS data-->
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+    {
+    	offset: 300, // offset (in px) from the original trigger point
+  		delay: 100, // values from 0 to 3000, with step 50ms
+  		duration: 2000, // values from 0 to 3000, with step 50ms
+  		easing: 'ease'
+    	}
+    	);
+  </script>
+
 </body>
 </html>

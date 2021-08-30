@@ -169,6 +169,7 @@ nav .icon-burger .line {
   padding: 30px;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  line-height:1.5em;
 
 }
 .custom-shape-divider-bottom-1621601408 {
@@ -256,9 +257,13 @@ nav .icon-burger .line {
 .warnings{
   padding-top: 5vh;
   width: 100vw;
-  font-size: 1.4em;
+  font-size: 1.3em;
   text-align: justify;
   text-justify: inter-word;
+    
+}
+.warnings p{
+  line-height:1.5em;
 }
 .warnings h1{
    align-content: center;
@@ -277,5 +282,6 @@ nav .icon-burger .line {
   list-style-image: url('bullet.gif');
   text-align: justify;
   text-justify: inter-word;
+  line-height:1.5em;
 }
 
