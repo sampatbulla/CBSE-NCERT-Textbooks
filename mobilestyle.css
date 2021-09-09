@@ -23,6 +23,9 @@ body{
   background-size: cover;
 
 }
+.navbar{
+  padding-left: 5 px;
+}
 nav {
   position: fixed;
   z-index: 10;
